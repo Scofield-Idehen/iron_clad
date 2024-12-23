@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-MY_CONTRACT = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+MY_CONTRACT = "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9"
 
 def main():
     rpc = os.getenv("RPC_URL") 
@@ -22,7 +22,7 @@ def main():
     fav_partial = boa.load("dad.vy")
 
     fav_partial.set_bool(True)
-    
+
 
     fac = fav_partial.get_bool()
     print(f"current bool value {fac}")
